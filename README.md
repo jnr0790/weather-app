@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Weather App
+A web application where you can see the current weather in whatever location you search.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Links
+- [Weather App Client]()
 
-## Available Scripts
+## User Stories
+- As a user I want to be able to search for a city
+- As a user I want to see the current weather for that city
 
-In the project directory, you can run:
+## Planning
+In this project I plan to work on the basic styling first. Followed by working on the API responses to the users inputs.
 
-### `npm start`
+## Technologies Used
+- React
+- CSS/FlexBox
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframe
+##### V1
+![Weather App](https://i.imgur.com/isMGRgf.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instructions
+#### Set Up
+1. Move into the folder you wish to create this app in.
+2. Create a new react app using `npx create-react-app app-name`in the terminal. (`app-name` can be named whatever you'd like)
+3. Move into the new directory using `cd weather-app`.
+4. **OPTIONAL** Remove uneccessary files and code.
+    - In the `src` folder delete `App.css`(unless you plan on styling each component separately), `App.test.js`, `logo.svg`, `reportWebVitals.js`, `setupTests.js`
+    - In the `public` folder delete `logo192.png` and `logo512.png`
+    - In `index.js` remove line 5 and 13 - 16. Leaving the file with
+    ```js
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import './index.css';
+    import App from './App';
 
-### `npm test`
+    ReactDOM.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+      document.getElementById('root')
+    );
+    ```
+    - In `App.js` remove lines 1 - 2 and lines 4 - 20. Leaving the file with
+    ```js
+    function App() {
+      return (
+        <div className="App">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        </div>
+      );
+    }
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    export default App;
+    ```
+    - In `index.css` remove all code leaving the file blank.
+5. Empty the `README.md` and fill with your own content.
+6. Create a new Git Hub repository.
+7. Copy your repositories URL or SSH.
+8. Run `git remote add origin URLorSSH`. (`URLorSSH` should be replaced with the URL or SSH to your repository)
+9. `git add .` and `git commit` your changes.
+10. Push your changes with `git push -u origin branch-name`.(`branch-name` should be replaced with the name of the main branch you'll use for production.)
