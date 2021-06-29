@@ -7,10 +7,12 @@
 
 body {
   font-family: Nunito, sans-serif;
+  text-align: center;
 }
 
+/* INPUT */
+
 .input {
-  text-align: center;
   margin: 20px;
   border: none;
 }
@@ -23,10 +25,44 @@ body {
 .search-box {
   background-color: transparent;
   width: 250px;
-  border-bottom: rgb(55, 151, 155) solid 2px;
+  border-bottom: #000 solid 2px;
 }
 .btn {
-  background-color: rgb(55, 151, 155);
+  background-color: #000;
+  color: #fff;
   padding: 5px;
   border-radius: 5px;
+}
+
+/* WEATHER */
+
+.location {
+  font-size: 30px;
+}
+
+.weather-display {
+  border-radius: 20px;
+  background-color: #00000060;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.temp-display, .icon {
+  display: inline-block;
+}
+
+.temp-display {
+  margin-right: 15%;
+}
+
+.temp {
+  font-size: 50px;
+}
+
+.condition {
+  font-size: 20px;
+}
+
+.icon {
+  font-size: 90px;
 }
