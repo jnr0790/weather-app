@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+}
+
+.input {
+  text-align: center;
+  margin: 20px;
+  border: none;
+}
+
+.search-box, .btn {
+  margin: 5px 5px;
+  height: 25px;
+  border: none;
+}
+.search-box {
+  background-color: transparent;
+  width: 250px;
+  border-bottom: rgb(55, 151, 155) solid 2px;
+}
+.btn {
+  background-color: rgb(55, 151, 155);
+  padding: 5px;
+  border-radius: 5px;
+}
