@@ -54,7 +54,7 @@ const Weather = (props) => {
       <h2 className="location">{weather.city}, {weather.country}</h2>
       <div className="weather-display">
         <div className="temp-display">
-          <h2 className="temp">{Math.round(weather.temp)}</h2>
+          <h2 className="temp">{Math.round(weather.temp)}&deg;</h2>
           <p className="condition">{weather.condition}</p>
         </div>
         <TiWeatherSunny className="icon" />
