@@ -43,14 +43,13 @@ const Weather = (props) => {
       })
       .catch(console.error)
   }
+  let weatherShow = null
 
-  return (
-    <div className="whole-display">
-      <Input
-        location={location}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-      />
+  if (!weather.temp) {
+    weatherShow = <div>
+    </div>
+  } else {
+    weatherShow = <div>
       <h2 className="location">{weather.city}, {weather.country}</h2>
       <div className="weather-display">
         <div className="temp-display">
@@ -59,6 +58,17 @@ const Weather = (props) => {
         </div>
         <TiWeatherSunny className="icon" />
       </div>
+    </div>
+  }
+
+  return (
+    <div className="whole-display">
+      <Input
+        location={location}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+      />
+      {weatherShow}
     </div>
   )
 }

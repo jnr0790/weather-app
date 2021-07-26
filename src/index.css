@@ -13,6 +13,7 @@ body {
 /* INPUT */
 
 .input {
+  font-family: Nunito, sans-serif;
   margin: 20px;
   border: none;
 }
@@ -22,7 +23,7 @@ body {
   height: 25px;
   border: none;
 }
-.search-box {
+.search-box, .search-box:active {
   background-color: transparent;
   width: 250px;
   border-bottom: #000 solid 2px;
