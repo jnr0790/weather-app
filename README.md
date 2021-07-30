@@ -17,9 +17,7 @@ In this project I plan to work on the setting up the components and basic stylin
 - CSS
 
 ## Unsolved Problems/Future Plans
-- Only showing the `weather-display` when there has been a successful search.
 - Dynamically updating the weather icon.
-- Adding backgrounds that change depending on the temprature.
 - Styling the content accordingly to the background.
 - Including 10 day forcast.
 
