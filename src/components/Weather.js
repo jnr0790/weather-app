@@ -43,6 +43,7 @@ const Weather = (props) => {
       })
       .catch(console.error)
   }
+
   let weatherShow = null
 
   if (!weather.temp) {
@@ -59,6 +60,28 @@ const Weather = (props) => {
         <TiWeatherSunny className="icon" />
       </div>
     </div>
+  }
+
+  if (weather.temp >= 80) {
+    document.body.classList.remove("spring")
+    document.body.classList.remove("fall")
+    document.body.classList.remove("winter")
+    document.body.classList.add("summer")
+  } else if (weather.temp < 80 && weather.temp >= 65) {
+    document.body.classList.remove("summer")
+    document.body.classList.remove("fall")
+    document.body.classList.remove("winter")
+    document.body.classList.add("spring")
+  } else if (weather.temp < 65 && weather.temp >= 45) {
+    document.body.classList.remove("summer")
+    document.body.classList.remove("spring")
+    document.body.classList.remove("winter")
+    document.body.classList.add("fall")
+  } else {
+    document.body.classList.remove("summer")
+    document.body.classList.remove("fall")
+    document.body.classList.remove("spring")
+    document.body.classList.add("winter")
   }
 
   return (
