@@ -8,6 +8,11 @@
 body {
   font-family: Nunito, sans-serif;
   text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: 1s ease;
 }
 
 /* INPUT */
@@ -66,4 +71,22 @@ body {
 
 .icon {
   font-size: 90px;
+}
+
+/* BACKGROUNDS */
+
+.summer {
+  background-image: url(./bkgrnd_imgs/summer.jpg);
+}
+
+.spring {
+  background-image: url(./bkgrnd_imgs/spring.jpg);
+}
+
+.fall {
+  background-image: url(./bkgrnd_imgs/fall.jpg);
+}
+
+.winter {
+  background-image: url(./bkgrnd_imgs/winter.jpg);
 }
